@@ -1,0 +1,129 @@
+{
+  "assistant": {
+    "dock": "bottom"
+  },
+  "theme": "Kanagawa Wave",
+  "telemetry": {
+    "metrics": false,
+    "diagnostics": false
+  },
+  "project_panel": {
+    "dock": "left",
+    "git_status": true
+  },
+  "preferred_line_length": 80,
+  "buffer_font_family": "Google Sans Mono",
+  "ui_font_family": "Google Sans Mono",
+  "ui_font_size": 14,
+  "buffer_font_size": 13,
+  "terminal": {
+    "blinking": "terminal_controlled",
+    "working_directory": "current_project_directory"
+  },
+  "autosave": "on_focus_change",
+  "cursor_blink": true,
+  "format_on_save": "on",
+  "formatter": "language_server",
+  "hover_popover_enabled": true,
+  "tab_size": 2,
+  "use_on_type_format": true,
+  "use_autoclose": true,
+  "tabs": {
+    "git_status": true,
+    "close_position": "right"
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": false
+  },
+  "remove_trailing_whitespace_on_save": true,
+  "show_whitespaces": "selection",
+  "enable_language_server": true,
+  "ensure_final_newline_on_save": true,
+  "active_pane_magnification": 1,
+  "auto_update": true,
+  "soft_wrap": "editor_width",
+  "buffer_font_features": {
+    "calt": false
+  },
+  "git": {
+    "git_gutter": "tracked_files"
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "inlayHints": {
+          "maxLength": null,
+          "lifetimeElisionHints": {
+            "useParameterNames": true,
+            "enable": "skip_trivial"
+          },
+          "closureReturnTypeHints": {
+            "enable": "always"
+          }
+        }
+      }
+    },
+    "gopls": {
+      "initialization_options": {
+        "hints": {
+          "assignVariableTypes": true,
+          "compositeLiteralFields": true,
+          "compositeLiteralTypes": true,
+          "constantValues": true,
+          "functionTypeParameters": true,
+          "parameterNames": true,
+          "rangeVariableTypes": true
+        }
+      }
+    },
+    "lsp": {
+      "typescript-language-server": {
+        "initialization_options": {
+          "preferences": {
+            "includeInlayParameterNameHints": "all",
+            "includeInlayParameterNameHintsWhenArgumentMatchesName": true,
+            "includeInlayFunctionParameterTypeHints": true,
+            "includeInlayVariableTypeHints": true,
+            "includeInlayVariableTypeHintsWhenTypeMatchesName": false,
+            "includeInlayPropertyDeclarationTypeHints": true,
+            "includeInlayFunctionLikeReturnTypeHints": true,
+            "includeInlayEnumMemberValueHints": true,
+            "includeInlayEnumMemberDeclarationTypes": true
+          }
+        }
+      }
+    },
+    "php-language-server": {
+      "initialization_options": {
+        "autoComplete": {
+          "enable": true,
+          "triggerCharacters": [
+            ".",
+            "$",
+            "->",
+            "::"
+          ]
+        },
+        "documentFormatting": true,
+        "codeActionsOnSave": {
+          "Organize Imports": true
+        },
+        "diagnostics": {
+          "enable": true,
+          "underline": true
+        },
+        "experimental": {
+          " inlayHints": {
+            "enable": true
+          }
+        }
+      }
+    }
+  }
+}
